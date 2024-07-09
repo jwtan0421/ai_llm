@@ -39,7 +39,7 @@ class VectorDBConnector:
         )
 
         texts = text_splitter.create_documents(
-            [page.page_content for page in pages[:4]]
+            [page.page_content for page in pages]
         )
 
         # Embed the text chunks and store them in a FAISS vector database
